@@ -1,0 +1,16 @@
+.Footer {
+    background-color: #222;
+    height: 1vh;
+    padding: 56px;
+    color: white;
+  }
+
+  p{
+    text-align: left;
+    border-bottom-style: dashed;
+    border-bottom-width: 1px;
+    width: 90px;
+  }
+
+
+
