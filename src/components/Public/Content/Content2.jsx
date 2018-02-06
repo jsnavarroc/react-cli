@@ -64,23 +64,23 @@ class Content extends Component {
   render() {
     return (
       <div className="Content">
-        <h2>Count = { this.state.count }</h2>
-        <p>
-          <button id = 'add' onClick = {this.handleCountClick}>+</button>
-          <button id = 'substract' onClick = {this.handleCountClick}>-</button>
-          <button id = 'reset' onClick = {this.handleCountClick}>reset</button>
-        </p>
+          <h2>Count = { this.state.count }</h2>
+            <p>
+              <button id = 'add' onClick = {this.handleCountClick}>+</button>
+              <button id = 'substract' onClick = {this.handleCountClick}>-</button>
+              <button id = 'reset' onClick = {this.handleCountClick}>reset</button>
+            </p>
 
-        <h2>Calculator</h2>
-        <p>
-          <input id='number1' type="number" value = {this.state.number1} onChange = {this.handleInputChanged}/>
-          +
-          <input id='number2' type="number" value = {this.state.number2} onChange = {this.handleInputChanged}/>
-          
-          <button id = 'result' onClick = {this.handleResultClick} > = </button>
+          <h2>Calculator</h2>
+          <p>
+            <input id='number1' type="number" value = {this.state.number1} onChange = {this.handleInputChanged}/>
+            +
+            <input id='number2' type="number" value = {this.state.number2} onChange = {this.handleInputChanged}/>
+            
+            <button id = 'result' onClick = {this.handleResultClick} > = </button>
 
-          { this.state.result }
-        </p>
+            { this.state.result }
+          </p>
       </div>
     );
   }
