@@ -12,7 +12,7 @@ import './index.css';
 import registerServiceWorker from './registerServiceWorker';
 
 render(
-    <Router >
+    <Router>
         <AppRoutes/>
     </Router>, document.getElementById('root')
     );

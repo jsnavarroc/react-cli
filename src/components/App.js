@@ -6,9 +6,9 @@ import propTypes from 'prop-types';
 import './css/App.css';
 
 // Components
-import Header from './Public/Header/Header'
-import Content from './Public/Content/Content'
-import Footer from './Public/Footer/Footer'
+import Header from './Public/Header/Header.jsx'
+import Content from './Public/Content/Content.jsx'
+import Footer from './Public/Footer/Footer.jsx'
 
 // Data
 import options from './Private/Date/menu'
