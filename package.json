@@ -5,6 +5,9 @@
   "dependencies": {
     "babel-polyfill": "^6.26.0",
     "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "html-minifier": "^3.5.8",
+    "node-fetch": "^2.0.0",
     "path": "^0.12.7",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
@@ -27,9 +30,12 @@
     "url-loader": "^0.6.2",
     "webpack": "^3.10.0",
     "webpack-dev-middleware": "^2.0.4",
-    "webpack-hot-middleware": "^2.21.0"
+    "webpack-hot-middleware": "^2.21.0",
+    "webpack-split-chunks": "^0.2.1"
   },
-  "scripts":{
-    "start": "babel-node src/server"
+  "scripts": {
+    "start": "babel-node src/server",
+    "production": "SET NODE_ENV=production  &&  SET BABEL_ENV=production  && npm run build && npm start",
+    "build": "SET NODE_ENV=production  && webpack --config webpack.config.babel.js"
   }
 }
