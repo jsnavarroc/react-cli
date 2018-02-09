@@ -23,9 +23,30 @@
    display: inline-block;
    padding-right: 10px; 
  }
-@keyframes App-logo-spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+ @keyframes App-logo-spin {
+   from { transform: rotate(0deg); }
+   to { transform: rotate(360deg); }
   }
   
+  .Menu li a{
+    color: #3E8CA1;
+
+    padding-right: 15px;
   
+    text-decoration: none;
+  
+    border-right-width: thin;
+  
+    border-right-style: solid;
+  
+    border-right-color: #3E8CA1;
+  
+    padding-left: 10px;
+  
+  }
+
+
+  .Menu li a:hover{
+    color:#fff;
+  }
+ 

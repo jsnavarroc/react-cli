@@ -1,5 +1,6 @@
 // Dependencies
 import React, { Component } from 'react';
+import propTypes from 'prop-types';
 
 // Assets
 import './css/App.css';
@@ -13,11 +14,16 @@ import Footer from './Public/Footer/Footer'
 import options from './Private/Date/menu'
 
 class App extends Component {
+  static propTypes = {
+    children : propTypes.object.isRequired
+  }
+
   render() {
+   const { children } = this.props; 
     return (
       <div className="App">
         <Header title = "jsnStore" options = {options} />  
-        <Content/>
+        <Content body = {children} />
         <Footer copyright = '&copy; JSN 2018'/>
       </div>
     );

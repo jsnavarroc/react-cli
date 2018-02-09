@@ -1,49 +1,22 @@
+// Dependencies 
 import React, { Component } from 'react';
+import propTypes from 'prop-types';
+
+// Assets
 import './css/Content.css'
 
 
 class Content extends Component {
-  constructor(){
-    super()
 
-    this.state = {
-      count : 0
-    };
-
-    this.handleCountClick = this.handleCountClick.bind(this);
-  }
-  
-  componentDidMount(){
-    this.setState({
-      count : 1
-    })
+  static propTypes = {
+    body : propTypes.object.isRequired
   }
 
-
-  handleCountClick(e){
-    if(e.target.id === 'add'){
-      this.setState({
-        count : this.state.count + 1
-      })
-    }else if(e.target.id === 'substract' && e.target.id >= 0){
-        this.setState({
-          count : this.state.count - 1
-        })
-      }else{
-          this.setState({
-            count : 0
-          })
-
-      }
-
-  }
-  render() {
-    return (
+ render() {
+  const {body} = this.props;
+  return (
       <div className="Content">
-        <h2>Count = { this.state.count }</h2>
-        <button id = 'add' onClick = {this.handleCountClick}>+</button>
-        <button id = 'substract' onClick = {this.handleCountClick}>-</button>
-        <button id = 'reset' onClick = {this.handleCountClick}>reset</button>
+          {body}
       </div>
     );
   }
