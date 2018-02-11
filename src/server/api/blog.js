@@ -3,8 +3,8 @@ import express from 'express';
 import fetch from 'node-fetch';
 
 // Data 
-import post from '../../components/Private/Date/post.json';
-import posts from '../../components/Private/Date/posts.json';
+import post from '../../private/Date/post.json';
+import posts from '../../private/Date/posts.json';
 
 // Express Router
 const Router = express.Router();

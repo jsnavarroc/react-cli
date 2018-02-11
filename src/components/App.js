@@ -11,7 +11,7 @@ import Content from './Public/Content/Content.jsx'
 import Footer from './Public/Footer/Footer.jsx'
 
 // Data
-import options from './Private/Date/menu'
+import options from '../private/Date/menu'
 
 class App extends Component {
   static propTypes = {
